@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX/////AAD/wcH/lpb/0tL/zMz/lJT/9fX/8PD/kJD/xMT/3t7/4eH/srL/mJj/+fn/qKj/W1v/i4v/cHD/JSX/trb/z8//vLz/7Oz/2dn/o6P/n5//m5v/5ub/e3v/ODj/T0//Pj7/UFD/XFz/LCz/Zmb/hIT/GRn/fX3/RET/ra3/ERH/MDD/Y2PciEoRAAAEPElEQVR4nO2ciVaqUBSGuQgOCOIEzqamltp9/9e7cStzIGux/805tv7vAVp8q4I9Ow4hhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhMS1+ixsjjzfD9xBEkX79ngynbZalUq1kVGtVFqt6WQ8bu+jJBkEvp+OmuGsXotNP3k+9dALknarO+89Lh76hz9CDv2HRaf33Gi1k8AL6wbFhmlU7a3WUqHvWXfmlSgdlmuXNhb6Zpcst4NaSX7T8u0+WAxK8Gub88s4uMp+taVZwVc6qm/ckWm9/4R6gp5pt3dGWoKhabMjMx3B2LTXCTqGj6a1TthoCAamrc7wFQyfTEud8YIXdE07XYD/Ja5MK10A/0+smTa6Am04MC10RQo23JoWuqIFNlyaFrqiAzY07ZMDVtCekPQTbGHDtq9hBvaLODGtk0Mbajg3rZPDM9TQtogmYwU1FBd6FXiCGpq2yQUpWDctkwuy5N80LZNLE2jom5bJBflBTCTPoZaWJEDDseA5XMfpwqTOGAMNG4LnyBoNww5M64Qu0PBZ8BxvrZS0DxM7MgcabgTP8dEswjet/gINJUHbZztM8peQxwJo+CB4jpOG3wzbOkbWTCXV4LOWZgANcIGGkse4aNoiM007DZ24hxK01fA1yl1aZyjqHOaNFoACOdz0iSh5yh+eqCIMcdW2Id7QqUuiiHdwze6ZgqHjeC9SQ9xQhigBvjHiEwkNcTMZojGam0NMsrzKgxmK5mhuj2mJ8iqcYapn6Dh+8bwK10IUlWm+H7UrnFfhCjXKhk5cMK8KYIaiUZofjUsWy6vuybBYKeieDItFOHdkWCn2o3GGym+awpkG7l2q+j0UZIu476FiTFOTZPz3ELXJNhtwkbdWbuEKK2+49ppOfhjuZH62Z8AxYLwDV8VQqNNI+nVHcG1ueK0twIxUA7dnsIaw9gVOEGuIa0HZaYhsIwINJd+tM0NByeKaPtAQ1D8Et/OXQEPJq+HTED0rjhzdQ/Tx9zCzD5ArF5L4483QU9j6Rg6YSkrTmWFdZe+tCjS0cyYKOQZt51wbcnXdztlE5F6QnfOlyJ1uO2eEoUckTMvkghS00hAZlsrCNi2wy2s27sxsoYYGL7Z8CXbv6ffvrv3+/UMbX6ZYQVGWrwN2dc3GXW5k7pRh3z4++mzE77+pYN0W6SPc0LYvosJVM7vu0xzwgpbdGFI5vqeyf1aQnYagVbe+lK5+2hOcom/THLHl5p7iBUw7am4al8yOxObLGX2lk4JHJOVvBFNlv4x9CceDv6JS0rnosL0xEOEsGmqv0Hya7ni72ZVw9GS9MnAM+pR42PTdaFzdzjed3Vr+u3076D3vmj/ofYO4NpyFTS/1/eNN9sn1TfZJdpM9SgZu4Pue1UfZCSGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGl8g/A/VsMI7KqJAAAAABJRU5ErkJggg=="></link>
+	<title>Youtube</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: sans-serif;
+		}
+		nav{
+			display: flex;
+			height: 60px;
+			width: 100%;
+			border-bottom: 1px solid whitesmoke;
+			
+		}
+		.logo i{
+			margin-left: 30px;
+			font-size: 20px;
+		}
+		img{
+			width: 100px;
+			height: 25px;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		input{
+			box-shadow: 90px 0 90px 0 whitesmoke;
+			margin-left: 150px;
+			width: 530px;
+			height: 30px;
+			padding: 5px;
+			border-right: none;
+            font-size: 15px;
+            font-weight: bold;
+			border: 1px solid whitesmoke;
+			margin-top: 10px;
+		}
+		.search{
+			border: 1px solid whitesmoke;
+			height: 43px;
+			width: 70px;
+			font-size: 20px;
+			margin-left: 0px;
+			padding-bottom: 3px;
+			border-left: none;
+			background: whitesmoke;
 
+        }
+        button{
+        	cursor: pointer;
+        }
+        .button{
+        	margin-left: 30px;
+        	padding: 7px;
+        	font-size: 20px;
+        	border: none; 
+        	background: white;
+        }
+        .mic{
+        	padding: 10px 15px 10px 15px;
+        	border: none;
+        	margin-left: 15px;
+        	border-radius: 50%;
+            font-size: 20px;
+            background: whitesmoke;
+        }
+        .category button{
+        	border: none;
+        	margin-left: 15px;
+        	padding: 10px 15px 10px 15px;
+        	font-size: 15px;
+        	border-radius: 20px;
+
+        }
+        .category{
+        	height: 50px;
+        	margin-left: 40px;
+        	margin-top: 10px;
+        	border-bottom: 1px solid whitesmoke;
+        }
+        .category i{
+        	font-size: 25px;
+        	margin-left: 30px;
+        	cursor: pointer;
+        }
+        .main-div button{
+        	position: absolute;
+        	padding: 5px;
+        	border-radius: 50%;
+        	border: none;
+        	font-size: 30px;
+        }
+        .main-div P{
+        	width: 210px;
+        	margin-left: 50px;
+
+        }
+        .channel-name{
+        	margin-left: 50px;
+        	text-decoration: none;
+        	color: gray;
+        	margin-top: 10px;
+        	font-size: 13px;
+
+        }
+        .video{
+        	width: 25%;
+        	border-radius: 10px;
+        	margin-left: 30px;
+        	margin-top: 20px;
+        }
+        .main-div{
+        	display: flex;
+        	
+        }
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<i class="fa-solid fa-bars"></i>
+			<img src="https://th.bing.com/th/id/OIP.gdsYnuzqxcjHkrkFHhMYFAHaBw?w=350&h=83&c=7&r=0&o=5&dpr=1.25&pid=1.7"/>
+		</div>
+		<div class="input">
+			<input type="text" placeholder="Search" name="text"><button class="search"><i class="fa-solid fa-magnifying-glass"></i></button> <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+			<button class="button" style="margin-left: 80px;"><i class="fa-solid fa-microphone"></i></button> <button class="button"><i class="fa-solid fa-bars"></i></button> <button class="button"><i class="fa-solid fa-bell"></i></button> <button class="button" style=" border-radius: 50%; padding: 0 5px 0 5px 0;
+			background: whitesmoke;"><i class="fa-solid fa-user"></i></button>
+		</div>
+	</nav>
+	<div class="category">
+		<i class="fa-solid fa-angle-left" style="margin-right: 20px;"></i> <button>All</button> <button>Music</button> <button>Live</button> <button>Mixes</button> <button>Javascript</button> <button>Computer Programming</button> <button>Motivation</button> <button>Comedy</button> <button>Cretive</button> <button>Course</button> <button>Editing</button> <i class="fa-solid fa-angle-right"></i>
+	</div>
+   <div class="main-div">
+   	<div class="video">
+   		<video width="270px" poster="https://images.pexels.com/photos/1162361/pexels-photo-1162361.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" controls>
+   			<source src="" type="video/mp4">
+   		</video>
+   		<br>
+   		<button><a href=""><i class="fa-solid fa-user"></i></a></button>
+   		<p style="font-weight: bold; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+   		<a class="channel-name" href="">Channel name ✔</a>
+   		<p style="color: gray; font-size: 13px;">145k ' 17 hourse ago</p>
+   	</div>
+
+   		<div class="video">
+   		<video width="270px" poster="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" controls>
+   			<source src="" type="video/mp4">
+   		</video>
+   		<br>
+   		<button><a href=""><i class="fa-solid fa-user"></i></a></button>
+   		<p style="font-weight: bold; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+   		<a class="channel-name" href="">Channel name ✔</a>
+   		<p style="color: gray; font-size: 13px;">145k ' 17 hourse ago</p>
+   	</div>
+
+   		<div class="video">
+   		<video width="270px" poster="https://images.pexels.com/photos/320617/pexels-photo-320617.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" controls>
+   			<source src="" type="video/mp4">
+   		</video>
+   		<br>
+   		<button><a href=""><i class="fa-solid fa-user"></i></a></button>
+   		<p style="font-weight: bold; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+   		<a class="channel-name" href="">Channel name ✔</a>
+   		<p style="color: gray; font-size: 13px;">145k ' 17 hourse ago</p>
+   	</div>
+
+   	<div class="video">
+   		<video width="270px" poster="https://images.pexels.com/photos/757185/pexels-photo-757185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" controls>
+   			<source src="" type="video/mp3">
+   		</video> 
+   		<br>
+   		<button><a href=""><i class="fa-solid fa-user"></i></a></button>
+   		<p style="font-weight: bold; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+   		<a class="channel-name" href="">Channel name ✔</a>
+   		<p style="color: gray; font-size: 13px;">145k ' 17 hourse ago</p>
+   	</div>
+
+   </div>
+
+</body>
+</html>
